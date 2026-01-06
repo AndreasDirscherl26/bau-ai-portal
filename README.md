@@ -57,4 +57,3 @@ Wenn du es als klickbaren Link willst, deploye z.B. auf Vercel/Render/Azure Web 
 
 Hinweis: setze zusätzlich `NEXT_PUBLIC_DEMO_MODE=true/false` (gleich wie DEMO_MODE), damit die UI korrekt anzeigt.
 
-<!-- redeploy 2 -->
