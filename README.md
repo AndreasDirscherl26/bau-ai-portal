@@ -51,7 +51,7 @@ npm run dev
 ```
 
 ## 3) Deployment (echtes "Link klicken")
-Ich kann hier keinen öffentlichen Link hosten oder deployen.
+Ich kann hier keinen öffentlichen Link hosten oder deployen
 Wenn du es als klickbaren Link willst, deploye z.B. auf Vercel/Render/Azure Web App und setze dort die ENV Variablen.
 
 
