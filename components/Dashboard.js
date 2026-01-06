@@ -1,3 +1,5 @@
+import { signIn } from "next-auth/react";
+
 import { useEffect, useMemo, useState } from 'react';
 
 function prettyBytes(num) {
@@ -71,6 +73,24 @@ export default function Dashboard() {
     <div className="row">
       <div className="col">
         <div className="panel">
+    
+        <div style={{ marginBottom: "16px", textAlign: "right" }}>
+  <button
+    onClick={() => signIn("azure-ad")}
+    style={{
+      backgroundColor: "#0078D4",
+      color: "white",
+      padding: "10px 16px",
+      borderRadius: "6px",
+      border: "none",
+      cursor: "pointer",
+      fontSize: "14px"
+    }}
+  >
+    Mit Microsoft anmelden
+  </button>
+</div>
+
           <div className="tabs">
             <button className={`tab ${tab==='files'?'active':''}`} onClick={() => setTab('files')}>Dateien</button>
             <button className={`tab ${tab==='calendar'?'active':''}`} onClick={() => setTab('calendar')}>Kalender</button>
