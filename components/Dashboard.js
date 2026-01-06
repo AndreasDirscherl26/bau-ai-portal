@@ -17,10 +17,11 @@ export default function Dashboard() {
 
   const [chatInput, setChatInput] = useState('');
   const [messages, setMessages] = useState([
-    { role: 'ai', text: 'Hi! Ich bin deine Bau‑KI. Stelle Fragen zu Plänen, Protokollen, LV, Normenlogik usw.
-
-Hinweis: In DEMO MODE sind Daten & Antworten Beispielwerte.' }
-  ]);
+  {
+    role: 'ai',
+    text: 'Hi! Ich bin deine Bau-KI. Stelle Fragen zu Plänen, Protokollen, LV, Normenlogik usw.\n\nHinweis: Im DEMO-MODUS sind Daten & Antworten Beispielwerte.'
+  }
+]);
 
   async function loadFiles() {
     setLoading(true);
